@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #5347ff;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Para navegadores WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5347ff; /* cor da alça da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2c248a; /* cor da alça da barra de rolagem ao passar o mouse */
+}
+
+/* Para Firefox */
+::-moz-scrollbar {
+    width: 12px; /* largura da barra de rolagem */
+}
+
+::-moz-scrollbar-track {
+    background-color: #f1f1f1; /* cor de fundo da barra de rolagem */
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #6964a8; /* cor da alça da barra de rolagem */
+}
+
+::-moz-scrollbar-thumb:hover {
+    background-color: #504d6d; /* cor da alça da barra de rolagem ao passar o mouse */
+}
+
+/* Para navegadores baseados em Chromium que não suportam scrollbar-color */
+/* Adiciona uma borda colorida para simular a cor da alça da barra de rolagem */
+* {
+    scrollbar-color: #3700ff #f1f1f1;
+    scrollbar-width: thin;
+}
+
+p {
+    line-height: 1.5; /* Ajuste o valor conforme necessário para aumentar ou diminuir o espaçamento entre as linhas */
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0% 0% 15%;
+    width: 100%;
+    color: #5347ff;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    
+}
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover); /* Cor do texto ao passar o mouse */
+}
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__conteudo__titulo_experiencia{
+    font-size: 28px;
+    font-family: var(--fonte-primaria);
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto{
+    font-size: 16px;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 18px;
+}
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 358px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+.rodape {
+    color: var(--cor-primaria); /* Cor do texto */
+    background-color: var(--cor-terciaria); /* Cor de fundo do rodapé */
+    padding: 24px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhamento do texto */
+    font-family: var(--fonte-secundaria); /* Fonte do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+}
+.container-fluid {
+    max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.contato-bloco {
+    display: flex; /* Para criar uma linha de blocos de contato */
+    justify-content: space-between; /* Distribui os blocos igualmente na linha */
+}
+
+.contato-item {
+    display: flex; /* Para alinhar ícone e texto na vertical */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens de contato */
+}
+.contato-icon {
+    width: 25px; /* Largura do ícone de contato */
+    margin-right: 10px; /* Espaçamento direito entre o ícone e o texto */
+    color: #000000;
+}
+
+.enviar-email {
+    margin-top: 5px; /* Espaçamento superior entre o texto e o link de enviar e-mail */
+    display: inline-block; /* Para que o link de enviar e-mail fique ao lado do texto */
+}
+.imagem-canto-superior-esquerdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;}
+
+.imagem-canto-inferior-direito {
+   position: absolute;
+   top: 690px;
+   right: 5px;
+   z-index: 999;}
+
+.imagem-canto-superior-direito {
+  position: absolute;
+  top: 290px;
+  right: 5px;
+  z-index: 999;}
+.whastapp{
+    color: #34af23;
+}
+/* Estilos para telas menores, como smartphones */
+@media only screen and (max-width: 768px) {
+    .cabecalho {
+        padding: 2% 0% 0% 5%; /* Ajustando o padding para telas menores */
+    }
+
+    .apresentacao {
+        padding: 5% 5%; /* Ajustando o padding para telas menores */
+        flex-direction: column; /* Alterando a direção do flex container para empilhamento */
+        align-items: center; /* Centralizando itens na tela */
+    }
+
+    .apresentacao__conteudo,
+    .apresentacao__conteudo__sobre {
+        width: 100%; /* Utilizando toda a largura disponível */
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+        text-align: left; /* Ajustando alinhamento do texto */
+    }
+
+    .apresentacao__links {
+        flex-direction: column; /* Empilhando os links um abaixo do outro */
+        gap: 20px; /* Adicionando espaçamento entre os links */
+    }
+
+    .apresentacao__links__link {
+        width: 100%; /* Utilizando toda a largura disponível */
+    }
+
+    .rodape {
+        padding: 16px; /* Reduzindo o padding para telas menores */
+    }
+
+    .imagem-canto-superior-esquerdo {
+        width: 120px; /* Redimensionando a imagem da logo para telas menores */
+    }
+
+    .imagem-canto-inferior-direito {
+        width: 100px; /* Redimensionando a outra imagem para telas menores */
+    }
+    /* Estilos para tornar as imagens responsivas */
+    .imagem-canto-superior-esquerdo,
+    .imagem-canto-inferior-direito {
+        max-width: 80%; /* Define a largura máxima como 100% para que as imagens se ajustem à largura do contêiner */
+        height: auto; /* Permite que a altura das imagens seja ajustada automaticamente para manter a proporção */
+    }
+    .imagem-canto-superior-direito {
+        max-width: 80%; /* Define a largura máxima como 100% para que as imagens se ajustem à largura do contêiner */
+        height: auto; /* Permite que a altura das imagens seja ajustada automaticamente para manter a proporção */
+    }
+    .imagem-canto-superior-esquerdo {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        z-index: 999;}
+    
+/*     .imagem-canto-inferior-direito {
+       position: absolute;
+       top: 600px;
+       left: 69%;
+       z-index: 999;
+       max-width: 30%} */
+
+       .imagem-canto-superior-direito {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        z-index: 999;
+        max-width: 40%}
+    
+       .cabecalho__menu{
+        display: flex;
+        gap: 50px;
+    }
+        .esconder {
+            display: none;
+        }
+ 
+        /* Estilos para o Accordion */
+    .accordion {
+        background-color: #f9f9f9;
+        color: #333;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #ddd;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .contato-form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 5px solid var(--cor-terciaria);
+        border-radius: 10px;
+    }
+    
+    .contato-form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        padding: 30px;
+    }
+    
+ /*    .contato-form input,
+    .contato-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    } */
+    
+    .contato-form button {
+        background-color:#5347ff;
+        color:#ff9900;
+        border: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .contato-form button:hover {
+        background-color: var(--cor-hover);
+    }
+    .contato-form input,
+    .contato-form textarea {
+        width: 642px;
+        height: 138px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 5px solid #ccc;
+        border-radius: 5px; /* Adicionando borda arredondada */
+    }
+    .contato-form input[type="text"],
+    .contato-form input[type="email"],
+    .contato-form input[type="tel"],
+    .contato-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none; /* Evita redimensionamento da área de texto */
+    }
+    .texto-escondido {
+        display: none;
+    }
+}
