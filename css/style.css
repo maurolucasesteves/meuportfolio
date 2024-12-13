@@ -1,0 +1,98 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #444444, #003366);
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+header {
+    background: transparent;
+    padding: 2em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 160px;
+    border-radius: 50%;
+}
+
+.header-content {
+    text-align: center;
+    flex: 1;
+}
+
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+/* Estilização dos containers */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.container div {
+    background-color: #003366;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container div a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container div a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.footer-links p {
+    margin: 0.5em 0;
+}
+
+.footer-info {
+    margin-top: 1em;
+    font-size: 0.9em;
+    border-top: 1px solid #444444;
