@@ -90,9 +90,58 @@ footer {
 
 .footer-links p {
     margin: 0.5em 0;
+    color: #ffffff;
 }
 
 .footer-info {
     margin-top: 1em;
     font-size: 0.9em;
     border-top: 1px solid #444444;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    header img {
+        max-width: 80px; /* Aumentado para melhor proporção */
+        margin-bottom: 1em;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .header-content {
+        margin-bottom: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+}
+
+/* Fallback para navegadores que não suportam grid */
+@supports not (display: grid) {
+    .container {
+        display: block;
+    }
+
+    .container div {
+        margin-bottom: 1.5em;
+    }
+}
