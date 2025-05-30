@@ -536,3 +536,16 @@ html {
         margin-bottom: 1.5em;
     }
 }
+/* Adicione ao seu CSS atual */
+.container div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+header img {
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
