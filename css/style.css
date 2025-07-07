@@ -97,7 +97,7 @@ body.light-mode .footer-links a:hover {
 .theme-toggle {
     position: fixed;
     top: 15px;
-    right: 660px;
+    right: 47%;
     z-index: 1001;
     background: rgba(102, 204, 255, 0.9);
     color: #003366;
