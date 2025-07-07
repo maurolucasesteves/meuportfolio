@@ -96,8 +96,8 @@ body.light-mode .footer-links a:hover {
 /* Botão de alternância de tema melhorado */
 .theme-toggle {
     position: fixed;
-    top: 20px;
-    right: 620px;
+    top: 15px;
+    right: 660px;
     z-index: 1001;
     background: rgba(102, 204, 255, 0.9);
     color: #003366;
