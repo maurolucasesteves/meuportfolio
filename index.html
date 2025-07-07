@@ -8,23 +8,17 @@
     <meta name="author" content="Mauro Lucas Esteves">
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PKG7DGCX');</script>
-    <!-- End Google Tag Manager -->
-</head>
+    </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
+    <button class="theme-toggle" id="toggle-theme">🌓 Mudar Tema</button>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKG7DGCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Navegação fixa -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Mauro Lucas Esteves</div>
@@ -39,9 +33,8 @@
         </div>
     </nav>
 
-    <!-- Header como o original, mas melhorado -->
     <header id="inicio">
-        <a href="index.html"><img src="images/LogoMauro.jpg" alt="Logo Mauro Lucas Esteves" class="logo-img"></a>
+        <img loading="lazy" src="images/LogoMauro.jpg" alt="Foto de Perfil de Mauro Lucas Esteves" class="logo-img">
         <div class="header-content">
             <h1>Mauro Lucas Esteves</h1>
             <p class="subtitle"><b>Consultor | Analista de Suporte | Pós-Graduado em Data Science | Pós-Graduando em Product Management</b></p>
@@ -49,11 +42,10 @@
                 > Sempre em busca de um conhecimento sólido e continuado.
             </div>
         </div>
-        <img src="images/menor-removebg-preview.png" alt="Foto de Mauro Lucas Esteves" class="profile-photo">
+        <img loading="lazy" src="images/fotoml.webp" alt="Foto de Mauro Lucas Esteves" class="profile-photo">
     </header>
 
     <main>
-        <!-- Sobre Mim -->
         <section id="sobre">
             <h2>Sobre Mim</h2>
             <div class="about-content">
@@ -67,88 +59,116 @@
             </div>
         </section>
 
-        <!-- Skills -->
         <section id="skills">
             <h2>Stack Tecnológica</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>💻 Conhecimentos em Linguagens & Frameworks</h3>
                     <div class="badges">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript / TypeScript">
-                        <h3>JavaScript / TypeScript</h3>
-                        <p>O que aprendi: ES6+, tipagem estática, async/await, manipulação de DOM. Como apliquei: implementei validações de formulários e interações dinâmicas no front-end. Benefício gerado: aumento de 50% na usabilidade e redução de erros de input.</p>
-                        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python e Python para Data Science">
-                         <h3>Python e Python para Data Science</h3>
-                        <p>O que aprendi: classes, herança, ORM do Django, rotas e templates. Como apliquei: desenvolvi um sistema de cadastro de clientes com autenticação e painel administrativo. O que aprendi: manipulação de dados com Pandas, cálculos numéricos com NumPy e limpeza de datasets. Como apliquei: utilizei essas bibliotecas para processar e analisar logs de uso de sistemas no meu trabalho, transformando centenas de milhares de registros em relatórios consolidados e permitiu identificar padrões de falhas antes críticas.</p>
-                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                         <h3>HTML5</h3>
-                        <p>Como forma de me atualizar o que aprendi: semântica HTML, flexbox, grid e responsividade. Como apliquei: reconstruí o layout do site da empresa para adaptá-lo a dispositivos móveis.</p>        
-                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                        <h3>CSS3</h3>
-                        <p>Foi muito importante esse curso para minha atualizar em relação evolução do CSS3 depois de alguns anos sem utilização.</p>
-                        <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-                        <h3>Bootstrap</h3>
-                        <p>Esse curso de Bootstrap foi essencial para me atualizar sobre as melhores práticas do desenvolvimento moderno, permitindo aproveitar componentes prontos em vez de reinventar a roda.</p>
-                        <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="NODE.JS">
-                        <h3>Node.js & Express</h3>
-                        <p>O que aprendi: criação de APIs RESTful, middlewares, roteamento e autenticação JWT. Como apliquei: criei um serviço de notificações push para clientes externos. Benefício gerado: integração simplificada com sistemas de terceiros e entrega de notificações em tempo real.</p>
-                        <img src="https://img.shields.io/badge/-cypress-%23E5E5E5?logo=cypress&logoColor=058a5e" alt="Cypress">
-                        <h3>Cypress & PowerShell</h3>
-                        <p>O que aprendi: testes E2E automatizados e scripts de automação de tarefas. Como apliquei: escrevi suítes de testes que rodam em pipeline CI/CD e scripts de deploy. Benefício gerado: pipeline passou a falhar 70% menos por erros não detectados.</p> 
-                        <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-                        <h3>Figma</h3>
-                        <p>O que aprendi: auto-layout, prototipagem interativa e sistemas de design. Como apliquei: criei protótipos de interface para aprovação do cliente antes do desenvolvimento. Benefício gerado: aprovação de design em 1 ciclo, evitando retrabalhos.</p> 
-                        <img src="https://img.shields.io/badge/Tableau-1029C8?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau">
-                        <h3>Tableau</h3>
-                        <p>O que aprendi: criação de dashboards interativos, transformação de dados, LoD Expressions, gráficos avançados, mapas e storytelling de dados. Como apliquei: desenvolvi um painel de BI para monitorar indicadores de desempenho operacional (SLA, tempos de resposta e volumes de chamados), combinando várias fontes de dados e criando filtros dinâmicos para diferentes níveis hierárquicos. Benefício gerado: a equipe de gestão passou a ter visibilidade em tempo real dos KPIs.</p> 
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Badge JavaScript">
+                            <h4>JavaScript / TypeScript</h4>
+                            <p>O que aprendi: ES6+, tipagem estática, async/await, manipulação de DOM. Como apliquei: implementei validações de formulários e interações dinâmicas no front-end. Benefício gerado: aumento de 50% na usabilidade e redução de erros de input.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Badge Python">
+                            <h4>Python e Python para Data Science</h4>
+                            <p>O que aprendi: classes, herança, ORM do Django, rotas e templates. Como apliquei: desenvolvi um sistema de cadastro de clientes com autenticação e painel administrativo. O que aprendi: manipulação de dados com Pandas, cálculos numéricos com NumPy e limpeza de datasets. Como apliquei: utilizei essas bibliotecas para processar e analisar logs de uso de sistemas no meu trabalho, transformando centenas de milhares de registros em relatórios consolidados e permitiu identificar padrões de falhas antes críticas.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Badge HTML5">
+                            <h4>HTML5</h4>
+                            <p>Como forma de me atualizar o que aprendi: semântica HTML, flexbox, grid e responsividade. Como apliquei: reconstruí o layout do site da empresa para adaptá-lo a dispositivos móveis.</p>        
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Badge CSS3">
+                            <h4>CSS3</h4>
+                            <p>Foi muito importante esse curso para minha atualizar em relação evolução do CSS3 depois de alguns anos sem utilização.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Badge Bootstrap">
+                            <h4>Bootstrap</h4>
+                            <p>Esse curso de Bootstrap foi essencial para me atualizar sobre as melhores práticas do desenvolvimento moderno, permitindo aproveitar componentes prontos em vez de reinventar a roda.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Badge Node.js">
+                            <h4>Node.js & Express</h4>
+                            <p>O que aprendi: criação de APIs RESTful, middlewares, roteamento e autenticação JWT. Como apliquei: criei um serviço de notificações push para clientes externos. Benefício gerado: integração simplificada com sistemas de terceiros e entrega de notificações em tempo real.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/-cypress-%23E5E5E5?logo=cypress&logoColor=058a5e" alt="Badge Cypress">
+                            <h4>Cypress & PowerShell</h4>
+                            <p>O que aprendi: testes E2E automatizados e scripts de automação de tarefas. Como apliquei: escrevi suítes de testes que rodam em pipeline CI/CD e scripts de deploy. Benefício gerado: pipeline passou a falhar 70% menos por erros não detectados.</p> 
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Badge Figma">
+                            <h4>Figma</h4>
+                            <p>O que aprendi: auto-layout, prototipagem interativa e sistemas de design. Como apliquei: criei protótipos de interface para aprovação do cliente antes do desenvolvimento. Benefício gerado: aprovação de design em 1 ciclo, evitando retrabalhos.</p> 
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Tableau-1029C8?style=for-the-badge&logo=tableau&logoColor=white" alt="Badge Tableau">
+                            <h4>Tableau</h4>
+                            <p>O que aprendi: criação de dashboards interativos, transformação de dados, LoD Expressions, gráficos avançados, mapas e storytelling de dados. Como apliquei: desenvolvi um painel de BI para monitorar indicadores de desempenho operacional (SLA, tempos de resposta e volumes de chamados), combinando várias fontes de dados e criando filtros dinâmicos para diferentes níveis hierárquicos. Benefício gerado: a equipe de gestão passou a ter visibilidade em tempo real dos KPIs.</p> 
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>🗄️ Banco de Dados - Experiência 4 anos em MySQL </h3>
+                    <h3>🗄️ Banco de Dados - Experiência 4 anos em MySQL</h3>
                     <div class="badges">
-                        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-                         <h3>PostgreSQL</h3>
-                        <p>Realizei formação em Sistemas Gerenciadores de Banco de Dados na Alura, onde aprofundei meus conhecimentos em conceitos, características e nuances dessas plataformas, com ênfase prática em PostgreSQL.</p>
-                        <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                         <h3>MySQL</h3>
-                        <p>Utilizo MySQL 5.7.3 diariamente em um banco de dados de cerca de 2.000 tabelas interconectadas, realizando suporte, análise de desempenho e correções — incluindo otimização de índices e reparo de estruturas corrompidas — para garantir agilidade e confiabilidade. Foi maravilhoso acompanhar a evolução do software ao longo das versões. Concluí formação em SGBD pela Alura, aprofundando meus conhecimentos em conceitos, características e nuances de sistemas gerenciadores de banco de dados, com ênfase prática em MySQL.</p>
-                        <img src="https://img.shields.io/badge/MariaDB-01529E?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB">
-                         <h3>MariaDB</h3>
-                        <p>Foi excelente trabalhar com o MariaDB, a ferramenta open source inspirada no MySQL. Pude avaliar em profundidade as semelhanças e diferenças entre as plataformas, aproveitando recursos exclusivos do MariaDB para otimização e segurança.</p>
-                        <img src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server">
-                        <h3>SQL Server</h3>
-                        <p>Concluí dois cursos avançados de SQL Server, nos quais comparei detalhadamente as versões 2017, 2019 e 2022, avaliando melhorias de desempenho, novos recursos e otimizações introduzidas em cada lançamento. </p>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="Badge PostgreSQL">
+                            <h4>PostgreSQL</h4>
+                            <p>Realizei formação em Sistemas Gerenciadores de Banco de Dados na Alura, onde aprofundei meus conhecimentos em conceitos, características e nuances dessas plataformas, com ênfase prática em PostgreSQL.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="Badge MySQL">
+                            <h4>MySQL</h4>
+                            <p>Utilizo MySQL 5.7.3 diariamente em um banco de dados de cerca de 2.000 tabelas interconectadas, realizando suporte, análise de desempenho e correções — incluindo otimização de índices e reparo de estruturas corrompidas — para garantir agilidade e confiabilidade. Foi maravilhoso acompanhar a evolução do software ao longo das versões. Concluí formação em SGBD pela Alura, aprofundando meus conhecimentos em conceitos, características e nuances de sistemas gerenciadores de banco de dados, com ênfase prática em MySQL.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/MariaDB-01529E?style=for-the-badge&logo=mariadb&logoColor=white" alt="Badge MariaDB">
+                            <h4>MariaDB</h4>
+                            <p>Foi excelente trabalhar com o MariaDB, a ferramenta open source inspirada no MySQL. Pude avaliar em profundidade as semelhanças e diferenças entre as plataformas, aproveitando recursos exclusivos do MariaDB para otimização e segurança.</p>
+                        </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="Badge SQL Server">
+                            <h4>SQL Server</h4>
+                            <p>Concluí dois cursos avançados de SQL Server, nos quais comparei detalhadamente as versões 2017, 2019 e 2022, avaliando melhorias de desempenho, novos recursos e otimizações introduzidas em cada lançamento.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
                     <h3>☁️ Cloud & Infraestrutura</h3>
                     <div class="badges">
-                        <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                        <img src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
-                        <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud">
-                         <h3>Cursos preparatórios para Certificações Cloud</h3>
-                    <p>Tive a oportunidade de realizar, no SENAI, um curso de introdução à computação em nuvem e recursos das plataformas, com foco na preparação para certificações. Durante alguns meses, explorei plataformas como Google Cloud, AWS e Azure.</p>
-                    <div class="cert-links">
-                        <a href="https://www.cloudskillsboost.google/public_profiles/543bb36a-e60c-46ca-8705-f7b8c25147dc" target="_blank">📃 Google Cloud Skills</a>
-                        <a href="https://www.credly.com/badges/96a545a9-074a-46ee-9c87-0027c00abb40/linked_in_profile" target="_blank">📃 AWS Academy</a>
-                        <a href="https://learn.microsoft.com/pt-br/users/maurolucasesteves/" target="_blank">📃 Microsoft Learn</a>
-                    </div>
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="Badge AWS">
+                            <img loading="lazy" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Badge Azure">
+                            <img loading="lazy" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Badge Google Cloud">
+                            <h4>Cursos preparatórios para Certificações Cloud</h4>
+                            <p>Tive a oportunidade de realizar, no SENAI, um curso de introdução à computação em nuvem e recursos das plataformas, com foco na preparação para certificações. Durante alguns meses, explorei plataformas como Google Cloud, AWS e Azure.</p>
+                            <div class="cert-links">
+                                <a href="https://www.cloudskillsboost.google/public_profiles/543bb36a-e60c-46ca-8705-f7b8c25147dc" target="_blank">📃 Google Cloud Skills</a>
+                                <a href="https://www.credly.com/badges/96a545a9-074a-46ee-9c87-0027c00abb40/linked_in_profile" target="_blank">📃 AWS Academy</a>
+                                <a href="https://learn.microsoft.com/pt-br/users/maurolucasesteves/" target="_blank">📃 Microsoft Learn</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
                     <h3>🖥️ Sistemas Operacionais</h3>
                     <div class="badges">
-                        <img src="https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
-                        <img src="https://img.shields.io/badge/Linux-E34F26?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                        <div class="skill-item">
+                            <img loading="lazy" src="https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white" alt="Badge Windows">
+                            <img loading="lazy" src="https://img.shields.io/badge/Linux-E34F26?style=for-the-badge&logo=linux&logoColor=black" alt="Badge Linux">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Educação -->
         <section id="educacao">
             <h2>Educação & Certificações</h2>
             <div class="container">
@@ -175,16 +195,6 @@
                     <a href="https://drive.google.com/file/d/18ls_OrJZQQ6PJx7gnBE4o62hQeI7rwEu/view?usp=sharing" target="_blank">📃 Meu Diploma</a>
                 </div>
                 
-                <!-- <div class="card">
-                    <h3>Cursos preparatórios para Certificações Cloud</h3>
-                    <p>Tive a oportunidade de realizar, no SENAI, um curso de introdução à computação em nuvem e recursos das plataformas, com foco na preparação para certificações. Durante alguns meses, explorei plataformas como Google Cloud, AWS e Azure.</p>
-                    <div class="cert-links">
-                        <a href="https://www.cloudskillsboost.google/public_profiles/543bb36a-e60c-46ca-8705-f7b8c25147dc" target="_blank">📃 Google Cloud Skills</a>
-                        <a href="https://www.credly.com/badges/96a545a9-074a-46ee-9c87-0027c00abb40/linked_in_profile" target="_blank">📃 AWS Academy</a>
-                        <a href="https://learn.microsoft.com/pt-br/users/maurolucasesteves/" target="_blank">📃 Microsoft Learn</a>
-                    </div>
-                </div> -->
-                
                 <div class="card">
                     <h3>Cursos Alura</h3>
                     <p>Durante o período em que estudei na Alura, consegui evoluir e atualizar meus conhecimentos. Os cursos, apesar de curtos, são extremamente enriquecedores e agregam muito ao desenvolvimento profissional, alinhando-se às demandas da nova realidade do mercado.</p>
@@ -193,7 +203,6 @@
             </div>
         </section>
 
-        <!-- Experiência -->
         <section id="experiencia">
             <h2>Experiência Profissional</h2>
             <div class="container">
@@ -221,18 +230,18 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer id="contato">
         <div class="footer-links">
-            <div class="contact-info">
-                <img src="images/whatsapp.png" alt="Logo do WhatsApp" style="width: 18px;">
-                WhatsApp somente clicar no número: 📞<a href="https://wa.me/5518996861195">(18) 99686-1195</a>
-            </div>
-            <p>📧 Email: <a href="mailto:contato@maurolucasesteves.com.br">contato@maurolucasesteves.com.br</a>&nbsp;&nbsp;Hospedado na <img src="images/zoho-logo.png" alt="Logo do Zoho" style="width: 80px;"></p>
-            <p><a href="https://www.linkedin.com/in/maurolucasesteves/" target="_blank">Conecte-se comigo no&nbsp;<img src="images/LinkedIn.png" alt="Logo do Linkedin" style="width: 80px;"></a></p>
-            <p>Este site está hospedado no <a href="https://github.com" target="_blank"><img src="images/github-mark-white.png" alt="Logo do GitHub" style="width: 25px;"></a></p>
-            <p>Cícero Elpídio de Barros, 1069 - Vila Tazitsu - Pres. Prudente - SP, 19023-000</p>
-
+            <address>
+                <div class="contact-info">
+                    <img loading="lazy" src="images/whatsapp.png" alt="Logo do WhatsApp" style="width: 18px;">
+                    WhatsApp somente clicar no número: 📞<a href="https://wa.me/5518996861195">(18) 99686-1195</a>
+                </div>
+                <p>📧 Email: <a href="mailto:contato@maurolucasesteves.com.br">contato@maurolucasesteves.com.br</a>&nbsp;&nbsp;Hospedado na <a href="https://www.zoho.com/sites/" target="_blank"><img loading="lazy" src="images/zoho-logo.png" alt="Logo do Zoho" style="width: 80px;"></a></p>
+                <p><a href="https://www.linkedin.com/in/maurolucasesteves/" target="_blank">Conecte-se comigo no&nbsp;<img loading="lazy" src="images/LinkedIn.png" alt="Logo do Linkedin" style="width: 80px;"></a></p>
+                <p>Este site está hospedado no <a href="https://github.com/maurolucasesteves/portfolio-ml" target="_blank"><img loading="lazy" src="images/github-mark-white.png" alt="Logo do GitHub" style="width: 25px;"></a></p>
+                <p>Cícero Elpídio de Barros, 1069 - Vila Tazitsu - Pres. Prudente - SP, 19023-000</p>
+            </address>
         </div>
         <div class="footer-info">
             <p>Desenvolvido por <strong>Mauro Lucas Esteves</strong>. Todos os direitos reservados &copy; 2025.</p>
@@ -303,5 +312,12 @@
         
         typeWriter();
     </script>
+<script>
+  // Alterna tema claro/escuro
+  const btn = document.getElementById('toggle-theme');
+  btn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+  });
+</script>
 </body>
 </html>
