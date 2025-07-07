@@ -220,12 +220,14 @@ section {
     color: #e6e6e6;
 }
 
-/* Skills Grid */
+/* Skills Grid - MODIFICADO PARA COLUNA ÚNICA */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr; /* Uma única coluna */
     gap: 2rem;
     margin-bottom: 3rem;
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 0 auto 3rem auto; /* Centraliza horizontalmente */
 }
 
 .skill-category {
@@ -236,6 +238,7 @@ section {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
 }
 
 .skill-category::before {
@@ -271,6 +274,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
+    align-items: center; /* Alinha verticalmente */
 }
 
 .badges img {
@@ -281,11 +285,13 @@ section {
     transform: scale(1.1);
 }
 
-/* Container melhorado */
+/* Container melhorado - MODIFICADO PARA COLUNA ÚNICA */
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr; /* Uma única coluna */
     gap: 2em;
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .card {
@@ -485,9 +491,15 @@ html {
         font-size: 2em;
     }
 
-    .skills-grid,
+    .skills-grid {
+        max-width: 100%;
+        margin: 0 0 3rem 0;
+        gap: 1.5rem;
+    }
+
     .container {
-        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 0;
         gap: 1.5em;
     }
 
@@ -522,6 +534,19 @@ html {
     .typing-animation {
         font-size: 0.9rem;
     }
+
+    .skills-grid {
+        gap: 1rem;
+    }
+    
+    .skill-category,
+    .card {
+        padding: 1rem;
+    }
+    
+    .badges {
+        gap: 0.3rem;
+    }
 }
 
 /* Fallback para navegadores que não suportam grid */
@@ -536,6 +561,7 @@ html {
         margin-bottom: 1.5em;
     }
 }
+
 /* Adicione ao seu CSS atual */
 .container div:hover {
     transform: translateY(-5px);
