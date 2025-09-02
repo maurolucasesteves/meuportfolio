@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faria, Silveira & Jara - Sociedade de Advogados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="img/logomarca.jpg" alt="FSJ Advogados" class="logo-img">
+                </div>
+                <div class="nav-section">
+                    <div class="nav-container">
+                        <button class="nav-btn active" onclick="showPage('home')">Início</button>
+                        <button class="nav-btn" onclick="showPage('marcos')">Marcos Faria</button>
+                        <button class="nav-btn" onclick="showPage('elizeu')">Elizeu Silveira</button>
+                        <button class="nav-btn" onclick="showPage('rodrigo')">Rodrigo Jara</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <div class="container">
+            <!-- Página Inicial -->
+            <div id="home" class="page active">
+                <div class="hero">
+                    <h1>Excelência em Advocacia</h1>
+                    <p>A Faria, Silveira & Jara é uma sociedade de advogados comprometida em oferecer serviços jurídicos de alta qualidade, com foco na satisfação do cliente e na resolução eficaz de questões legais complexas.</p>
+                </div>
+            </div>
+
+            <!-- Marcos Tadeu Fernandes de Faria -->
+            <div id="marcos" class="page">
+                <div class="socio-card">
+                    <div class="socio-name">Marcos Tadeu Fernandes de Faria</div>
+                    <div class="socio-oab">OAB/SP 263.120</div>
+                    
+                    <div class="socio-contact">
+                        <div class="contact-item"><strong>Celular:</strong> (18) 99721-0943 Vivo</div>
+                        <div class="contact-item"><strong>Email:</strong> faria@fsjadvogados.com.br</div>
+                    </div>
+
+                    <div class="specialties">
+                        <h3>Áreas de Especialização</h3>
+                        <div class="specialty-text">
+                            Advogado especializado em Direito Civil, Empresarial e Contratual, com vasta experiência em questões imobiliárias, responsabilidade civil e direito do consumidor. Atua com dedicação na defesa dos interesses de seus clientes, oferecendo soluções jurídicas personalizadas e estratégicas para cada caso.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elizeu A. da Silveira Rosa -->
+            <div id="elizeu" class="page">
+                <div class="socio-card">
+                    <div class="socio-name">Elizeu A. da Silveira Rosa</div>
+                    <div class="socio-oab">OAB/SP 278.479</div>
+                    
+                    <div class="socio-contact">
+                        <div class="contact-item"><strong>Celular:</strong> (18) 99646-7873 Vivo</div>
+                        <div class="contact-item"><strong>Email:</strong> silveira@fsjadvogados.com.br</div>
+                    </div>
+
+                    <div class="specialties">
+                        <h3>Áreas de Especialização</h3>
+                        <div class="specialty-text">
+                            Especialista em Direito Trabalhista e Previdenciário, com profundo conhecimento em relações de trabalho, direitos sindicais e benefícios previdenciários. Dedica-se à defesa dos direitos dos trabalhadores e aposentados, atuando em processos de aposentadorias, pensões e questões trabalhistas complexas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodrigo Jara -->
+            <div id="rodrigo" class="page">
+                <div class="socio-card">
+                    <div class="socio-name">Rodrigo Jara</div>
+                    <div class="socio-oab">OAB/SP 275.050</div>
+                    
+                    <div class="socio-contact">
+                        <div class="contact-item"><strong>Celular:</strong> (18) 99133-4192 Vivo</div>
+                        <div class="contact-item"><strong>Email:</strong> jara@fsjadvogados.com.br</div>
+                    </div>
+
+                    <div class="specialties">
+                        <h3>Áreas de Especialização</h3>
+                        <div class="specialty-text">
+                            Advogado criminalista experiente, especializado em Direito Penal e Processual Penal, com destacada atuação em defesa criminal, crimes econômicos e tribunais do júri. Possui sólida experiência em casos complexos e execução penal, sempre primando pela defesa técnica qualificada de seus clientes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="office-info">
+                <div class="info-section">
+                    <h3>Contato</h3>
+                    <p><strong>Telefone:</strong> (18) 3221-2024</p>
+                    <p><strong>Website:</strong> www.fsjadvogados.com.br</p>
+                    <p><strong>Email:</strong> contato@fsjadvogados.com.br</p>
+                </div>
+                <div class="info-section">
+                    <h3>Localização</h3>
+                    <p><strong>Rua Piracicaba, 126</strong></p>
+                    <p>Edifício London House - 4º Andar - Sala 41</p>
+                    <p>Vila Tabajara - Presidente Prudente/SP</p>
+                    <p>CEP: 19014-150</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Faria, Silveira & Jara - Sociedade de Advogados. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://maurolucasesteves.com.br" target="_blank" rel="noopener noreferrer"><strong>Mauro Lucas Esteves</strong></a></p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Esconder todas as páginas
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Remover classe active de todos os botões
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Mostrar a página selecionada
+            document.getElementById(pageId).classList.add('active');
+            
+            // Adicionar classe active ao botão clicado
+            event.target.classList.add('active');
+        }
+
+        // Scroll suave quando navegar
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
