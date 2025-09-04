@@ -25,7 +25,7 @@
         })(window,document,'script','dataLayer','GTM-PKG7DGCX');</script>
     </head>
 <body>
-    <button class="theme-toggle" id="toggle-theme">🌙 Mudar Tema</button>
+    <button class="theme-toggle" id="toggle-theme" style="position: fixed; top: 80px; right: 20px; z-index: 999;">🌙 Mudar Tema</button>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKG7DGCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="navbar">
         <div class="nav-container">
@@ -202,28 +202,40 @@
 
         <section id="experiencia">
             <h2>Experiência Profissional</h2>
-            <div class="container">
-                <div class="card">
-                    <h3>Gerenet Sistema ISP (2021 - Atual)</h3>
-                    <h4>Analista de Suporte Avançado</h4>
-                    <div style="background: rgba(102, 204, 255, 0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
-                        <strong>🎯 Resultado Principal:</strong> Reduziu em 60% o tempo de resposta do sistema através de otimização de consultas SQL e reestruturação de índices.
+            
+            <!-- Experiência 1 - Gerenet (Destaque) -->
+            <div class="experience-highlight" style="background: rgba(0, 51, 102, 0.4); border: 1px solid rgba(102, 204, 255, 0.3); border-radius: 15px; padding: 2.5rem; margin-bottom: 2rem; position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem;">
+                    <div style="flex: 2; min-width: 300px;">
+                        <h3 style="color: #66ccff; margin-bottom: 0.5rem;">Gerenet Sistema ISP (2021 - Atual)</h3>
+                        <h4 style="color: #ffffff; margin-bottom: 1rem;">Analista de Suporte Avançado</h4>
+                        
+                        <div style="background: rgba(102, 204, 255, 0.2); padding: 15px; border-radius: 8px; margin: 15px 0;">
+                            <strong style="color: #66ccff;">🎯 Resultado Principal:</strong> Reduziu em 60% o tempo de resposta do sistema através de otimização de consultas SQL e reestruturação de índices.
+                        </div>
+                        
+                        <p style="color: #e6e6e6; line-height: 1.7; margin-bottom: 1rem;"><strong>Especialização em sistemas ERP para ISPs:</strong></p>
                     </div>
-                    <p><strong>Especialização em sistemas ERP para ISPs:</strong></p>
-                    <ul>
-                        <li>💳 <strong>Controle Financeiro:</strong> Gestão de mensalidades, boletos e cobrança PIX</li>
-                        <li>📊 <strong>Gestão Fiscal:</strong> Notas Fiscais 21/22, integração Prefeitura/SCM/SVA</li>
-                        <li>🗄️ <strong>Banco de Dados:</strong> MySQL com 2000+ tabelas, otimização e troubleshooting</li>
-                        <li>🔗 <strong>APIs:</strong> Integração bancária, SMS/WhatsApp, streaming, certificados A1/SSL</li>
-                        <li>🔧 <strong>Suporte Técnico:</strong> Debugging de rotinas, análise de servidores (dmesg)</li>
-                    </ul>
-                    <p><strong>Competências:</strong> Resolução de problemas • Análise de dados • Metodologias Ágeis • Debugging</p>
+                    
+                    <div style="flex: 1; min-width: 280px;">
+                        <ul style="color: #e6e6e6; line-height: 1.7; margin: 0; padding-left: 1.5rem;">
+                            <li><strong style="color: #66ccff;">💳 Controle Financeiro:</strong> Gestão de mensalidades, boletos e cobrança PIX</li>
+                            <li><strong style="color: #66ccff;">📊 Gestão Fiscal:</strong> Notas Fiscais 21/22, integração Prefeitura/SCM/SVA</li>
+                            <li><strong style="color: #66ccff;">🗄️ Banco de Dados:</strong> MySQL com 2000+ tabelas, otimização e troubleshooting</li>
+                            <li><strong style="color: #66ccff;">🔗 APIs:</strong> Integração bancária, SMS/WhatsApp, streaming, certificados A1/SSL</li>
+                            <li><strong style="color: #66ccff;">🔧 Suporte Técnico:</strong> Debugging de rotinas, análise de servidores (dmesg)</li>
+                        </ul>
+                        <p style="color: #e6e6e6; margin-top: 1rem; font-size: 0.9em;"><strong>Competências:</strong> Resolução de problemas • Análise de dados • Metodologias Ágeis • Debugging</p>
+                    </div>
                 </div>
-                
+            </div>
+            
+            <!-- Outras Experiências -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
                 <div class="card">
                     <h3>Stefanini Brasil - PMESP (2019 - 2021)</h3>
                     <h4>Analista de Suporte II</h4>
-                    <p>Suporte técnico especializado para 67 municípios do interior de São Paulo, incluindo serviços críticos como Bombeiros (193) e COPOM (190). Gerenciamento via Cherwell Service Management.</p>
+                    <p>Suporte técnico especializado para <strong>67 municípios</strong> do interior de São Paulo, incluindo serviços críticos como Bombeiros (193) e COPOM (190). Gerenciamento via Cherwell Service Management.</p>
                     <div class="cert-links">
                         <a href="https://drive.google.com/file/d/1HqFWqYz2TyCHAhvBMMxhaIgXqUYjr9Ut/view?usp=sharing" target="_blank">📃 Elogio PMESP</a>
                         <a href="https://drive.google.com/file/d/1HvJH3tKNiKV08dFicsbq4iv6NlOB64CJ/view?usp=sharing" target="_blank">📃 Elogio PMESP</a>
@@ -233,8 +245,8 @@
                 <div class="card">
                     <h3>Cast IT Group - Sefaz-SP (2017 - 2019)</h3>
                     <h4>Analista de Suporte Sênior Líder</h4>
-                    <p>Suporte especializado para Secretaria da Fazenda do Estado de São Paulo. Gerenciamento via IBM Control Desk, otimizando fluxo de atendimento em 20%.</p>
-                    <p><strong>Competências:</strong> ITIL • Administração de servidores • Troubleshooting • Gestão de equipe</p>
+                    <p>Suporte especializado para Secretaria da Fazenda do Estado de São Paulo. Gerenciamento via IBM Control Desk, <strong>otimizando fluxo de atendimento em 20%</strong>.</p>
+                    <p style="font-size: 0.9em; margin-top: 1rem;"><strong>Competências:</strong> ITIL • Administração de servidores • Troubleshooting • Gestão de equipe</p>
                 </div>
             </div>
         </section>
